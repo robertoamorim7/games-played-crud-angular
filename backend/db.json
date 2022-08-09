@@ -1,0 +1,34 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "The Last of Us",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "name": "GTA V",
+      "price": 65
+    },
+    {
+      "id": 3,
+      "name": "Celeste",
+      "price": 24.5
+    },
+    {
+      "id": 4,
+      "name": "Stray",
+      "price": 59.9
+    },
+    {
+      "name": "Spiderman",
+      "price": 150.8,
+      "id": 5
+    },
+    {
+      "name": "Spiderman",
+      "price": 150.8,
+      "id": 6
+    }
+  ]
+}
