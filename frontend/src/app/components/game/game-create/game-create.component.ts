@@ -10,8 +10,8 @@ import { Game } from './../game.model';
 })
 export class GameCreateComponent implements OnInit {
   game: Game = {
-    name: 'Spiderman',
-    price: 150.8,
+    name: '',
+    price: null,
   };
 
   constructor(private gameService: GameService, private router: Router) {}
@@ -20,7 +20,7 @@ export class GameCreateComponent implements OnInit {
 
   createGame(): void {
     this.gameService.create(this.game).subscribe(() => {
-      this.gameService.showMessage('cadastrando jogos toptoptpop');
+      this.gameService.showMessage('Jogo cadastrado!');
       this.router.navigate(['/games']);
     });
   }

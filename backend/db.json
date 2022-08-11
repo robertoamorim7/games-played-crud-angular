@@ -11,24 +11,29 @@
       "price": 65
     },
     {
-      "id": 3,
-      "name": "Celeste",
-      "price": 24.5
-    },
-    {
       "id": 4,
       "name": "Stray",
       "price": 59.9
     },
     {
-      "name": "Spiderman",
-      "price": 150.8,
+      "name": "Spiderman 3",
+      "price": "25",
       "id": 5
     },
     {
       "name": "Spiderman",
       "price": 150.8,
       "id": 6
+    },
+    {
+      "name": "Miles Morales",
+      "price": "200",
+      "id": 7
+    },
+    {
+      "name": "O bom de guerra",
+      "price": "350",
+      "id": 8
     }
   ]
 }

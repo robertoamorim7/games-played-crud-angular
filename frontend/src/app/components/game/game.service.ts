@@ -23,4 +23,23 @@ export class GameService {
   create(game: Game): Observable<Game> {
     return this.http.post<Game>(this.baseUrl, game);
   }
+
+  read(): Observable<Game[]> {
+    return this.http.get<Game[]>(this.baseUrl);
+  }
+
+  readById(id: string | null): Observable<Game> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Game>(url);
+  }
+
+  update(game: Game): Observable<Game> {
+    const url = `${this.baseUrl}/${game.id}`;
+    return this.http.put<Game>(url, game);
+  }
+
+  delete(game: Game): Observable<Game> {
+    const url = `${this.baseUrl}/${game.id}`;
+    return this.http.delete<Game>(url);
+  }
 }

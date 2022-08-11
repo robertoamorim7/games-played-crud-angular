@@ -28,10 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Funções/utilidades
 
-Databinding
+_Databinding_
 _Diretivas_
 _Serviços_
-Separar lógica de serviço de lógica de componente
+_Separar lógica de serviço de lógica de componente_
 _Rotas_
 Fazer lazy load de módulo, e colocar rotas filhas nesse módulo
 Reactive Form
@@ -48,3 +48,5 @@ Diretivas
 Rotas
 Services
 HTTP
+Databinding
+Separar lógica de serviço de lógica de componente

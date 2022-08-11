@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-card-title>Novo Jogo</mat-card-title>
+  <mat-card-title>Atualizar Jogo</mat-card-title>
 
   <form>
     <mat-form-field>
@@ -13,18 +13,16 @@
     <mat-form-field>
       <input
         matInput
-        placeholder="Preço do jogo"
+        placeholder="Preço"
         [(ngModel)]="game.price"
         name="price"
       />
     </mat-form-field>
   </form>
 
-  <button mat-raised-button (click)="createGame()" color="primary">
-    Cadastrar Jogo
+  <button mat-raised-button (click)="updateGame()" color="primary">
+    Atualizar
   </button>
 
-  <button mat-raised-button (click)="cancel()" color="warn">
-    Cancelar Cadastro
-  </button>
+  <button mat-raised-button (click)="cancel()" color="warn">Cancelar</button>
 </mat-card>
