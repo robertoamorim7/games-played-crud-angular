@@ -33,11 +33,11 @@ _Diretivas_
 _Serviços_
 _Separar lógica de serviço de lógica de componente_
 _Rotas_
+_HTTP_
+_Fazer CRUD_
 Fazer lazy load de módulo, e colocar rotas filhas nesse módulo
 Reactive Form
 Fazer Custom Validator
-_HTTP_
-Fazer CRUD
 Comunicação entre componentes
 Enviar dados entre pai e filho com @Input e @Output
 Enviar dados entre componentes que não tem ligação direta, com uso de Subject
@@ -50,3 +50,4 @@ Services
 HTTP
 Databinding
 Separar lógica de serviço de lógica de componente
+Fazer CRUD

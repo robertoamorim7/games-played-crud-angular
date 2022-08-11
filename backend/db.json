@@ -16,11 +16,6 @@
       "price": 59.9
     },
     {
-      "name": "Spiderman 3",
-      "price": "25",
-      "id": 5
-    },
-    {
       "name": "Spiderman",
       "price": 150.8,
       "id": 6
@@ -34,6 +29,11 @@
       "name": "O bom de guerra",
       "price": "350",
       "id": 8
+    },
+    {
+      "name": "Days Gone",
+      "price": "40",
+      "id": 9
     }
   ]
 }
