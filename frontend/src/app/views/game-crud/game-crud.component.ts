@@ -1,3 +1,4 @@
+import { HeaderService } from './../../components/template/header/header.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -7,7 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./game-crud.component.css'],
 })
 export class GameCrudComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private headerService: HeaderService) {
+    this.headerService.raiseDataEmitterEvent({
+      title: 'Cadastro de Jogos',
+      icon: 'videogame_asset',
+    });
+  }
 
   ngOnInit(): void {}
 

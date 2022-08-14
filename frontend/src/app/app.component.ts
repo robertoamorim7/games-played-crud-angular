@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HeaderService } from './components/template/header/header.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
