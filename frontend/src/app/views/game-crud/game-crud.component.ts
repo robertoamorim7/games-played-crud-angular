@@ -1,5 +1,5 @@
 import { HeaderService } from './../../components/template/header/header.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./game-crud.component.css'],
 })
 export class GameCrudComponent implements OnInit {
+  totalGamesReceived: number = 0;
+
+  handleGamesReceived(value: number) {
+    this.totalGamesReceived = value;
+  }
+
   constructor(private router: Router, private headerService: HeaderService) {
     this.headerService.raiseDataEmitterEvent({
       title: 'Cadastro de Jogos',

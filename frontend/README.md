@@ -36,11 +36,11 @@ _Rotas_
 _HTTP_
 _Fazer CRUD_
 _Enviar dados entre componentes que não tem ligação direta, com uso de Subject_
-Fazer lazy load de módulo, e colocar rotas filhas nesse módulo
-Reactive Form
-Fazer Custom Validator
-Comunicação entre componentes
-Enviar dados entre pai e filho com @Input e @Output
+_Comunicação entre componentes_
+_Enviar dados entre pai e filho com @Input e @Output_
+Fazer lazy load de módulo, e colocar rotas filhas nesse módulo - AULA 62
+Reactive Form - AULA 90
+Fazer Custom Validator - AULA 109
 
 ## Funções/utilidades já utilizadas/integradas
 
@@ -52,6 +52,8 @@ Databinding
 Separar lógica de serviço de lógica de componente
 Fazer CRUD
 Enviar dados entre componentes que não tem ligação direta, com uso de Subject
+Comunicação entre componentes
+Enviar dados entre pai e filho com @Input e @Output********\*********
 
 ## Alterações/correções
 

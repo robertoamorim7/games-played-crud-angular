@@ -26,14 +26,14 @@
       "id": 7
     },
     {
-      "name": "O bom de guerra",
-      "price": "350",
-      "id": 8
-    },
-    {
       "name": "Days Gone",
       "price": "40",
       "id": 9
+    },
+    {
+      "name": "Super Mario",
+      "price": "10",
+      "id": 10
     }
   ]
 }

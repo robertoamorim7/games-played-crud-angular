@@ -2,4 +2,6 @@
   Incluir Novo Jogo
 </button>
 
-<app-game-read></app-game-read>
+<h2>Quantidade de jogos cadastrados até o momento: {{ totalGamesReceived }}</h2>
+
+<app-game-read (newGameEvent)="handleGamesReceived($event)"></app-game-read>

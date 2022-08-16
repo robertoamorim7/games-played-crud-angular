@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { GameService } from '../game.service';
 import { Game } from './../game.model';
 
@@ -11,9 +11,18 @@ export class GameReadComponent implements OnInit {
   games: Game[] = [];
   displayedColumns = ['id', 'name', 'price', 'action'];
 
+  @Output() newGameEvent = new EventEmitter<number>();
+
+  addTotalGames(value: number) {
+    this.newGameEvent.emit(value);
+  }
+
   constructor(private gameService: GameService) {}
 
   ngOnInit(): void {
-    this.gameService.read().subscribe((games) => (this.games = games));
+    this.gameService.read().subscribe((games) => {
+      this.games = games;
+      this.addTotalGames(games.length);
+    });
   }
 }
