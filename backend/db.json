@@ -3,36 +3,37 @@
     {
       "id": 1,
       "name": "The Last of Us",
-      "price": 2000
+      "price": 2000,
+      "urlBoxArt": "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg"
     },
     {
       "id": 2,
       "name": "GTA V",
-      "price": 600
+      "price": 600,
+      "urlBoxArt": "https://img.ibxk.com.br/2019/02/01/01131128852124.jpg"
     },
     {
       "id": 4,
       "name": "Stray",
-      "price": 59.9
+      "price": 59.9,
+      "urlBoxArt": "https://cdn.ome.lt/lVp0MvgmlCYjCmTyJzR4s6x5s_I=/200x0/smart/extras/capas/stray-cover.jpg"
     },
     {
       "name": "Spiderman",
       "price": 100,
-      "id": 6
-    },
-    {
-      "name": "Miles Morales",
-      "price": "200",
-      "id": 7
+      "id": 6,
+      "urlBoxArt": "https://farm1.staticflickr.com/875/41233771921_1f8d2b177e_k.jpg"
     },
     {
       "name": "Days Gone",
       "price": "40",
-      "id": 9
+      "id": 9,
+      "urlBoxArt": "https://a-static.mlcdn.com.br/800x560/days-gone-ps4-bend-studio/hobimaimportingnews2/6194464691/b5486dffec6038e7ec6cc176998cd37a.jpg"
     },
     {
-      "name": "dadads",
-      "price": 23,
+      "name": "GoW Ragnarok ",
+      "price": 350,
+      "urlBoxArt": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
       "id": 10
     }
   ]

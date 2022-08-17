@@ -1,18 +1,23 @@
 <mat-toolbar class="header mat-elevation-z4">
-  <span>
-    <a>
-      <img
-        class="logo"
-        src="../../../../assets/logo.png"
-        alt="logo"
-        routerLink="/"
-      />
-    </a>
-  </span>
-  <span class="title-group">
-    <a>
-      <i class="material-icons">{{ headerInfo.icon }}</i>
-    </a>
-    {{ headerInfo.title }}
-  </span>
+  <div class="page-info">
+    <span>
+      <a>
+        <img
+          class="logo"
+          src="../../../../assets/logo.png"
+          alt="logo"
+          routerLink="/"
+        />
+      </a>
+    </span>
+    <span class="title-group">
+      <a>
+        <i class="material-icons">{{ headerInfo.icon }}</i>
+      </a>
+      {{ headerInfo.title }}
+    </span>
+  </div>
+  <div class="page-title">
+    <span routerLink="/" class="title">Games I've Played!!!</span>
+  </div>
 </mat-toolbar>

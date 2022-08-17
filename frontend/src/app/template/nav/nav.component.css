@@ -14,4 +14,7 @@
   padding: 16px;
   background-color: white;
   color: black;
+  position: fixed;
+  top: 64px;
+  padding-bottom: 64px;
 }

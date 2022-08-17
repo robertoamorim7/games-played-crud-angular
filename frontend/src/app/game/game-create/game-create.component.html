@@ -19,6 +19,14 @@
         type="number"
       />
     </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="URL da Box Art do jogo"
+        [(ngModel)]="game.urlBoxArt"
+        name="url"
+      />
+    </mat-form-field>
   </form>
 
   <button mat-raised-button (click)="createGame()" color="primary">

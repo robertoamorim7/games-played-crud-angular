@@ -1,6 +1,17 @@
 .header {
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+}
+
+.page-info {
   display: flex;
   align-items: center;
+}
+
+.page-title {
+  margin-right: 32px;
+  cursor: pointer;
 }
 
 .header a {
@@ -23,4 +34,8 @@
 
 .header i {
   margin-right: 8px;
+}
+
+.title {
+  font-size: 2rem;
 }

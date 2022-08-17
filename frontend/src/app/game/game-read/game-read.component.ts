@@ -9,7 +9,6 @@ import { Game } from './../game.model';
 })
 export class GameReadComponent implements OnInit {
   games: Game[] = [];
-  displayedColumns = ['id', 'name', 'price', 'action'];
 
   @Output() newGameEvent = new EventEmitter<number>();
 

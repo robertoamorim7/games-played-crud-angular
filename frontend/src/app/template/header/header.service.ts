@@ -13,12 +13,4 @@ export class HeaderService {
   raiseDataEmitterEvent(data: HeaderData) {
     this.dataEmitter.next(data);
   }
-
-  /* get headerData(): HeaderData {
-    return this.headerData.value;
-  }
-
-  set headerData(headerData: HeaderData) {
-    this.headerData.next(headerData);
-  } */
 }
