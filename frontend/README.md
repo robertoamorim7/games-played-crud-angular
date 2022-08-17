@@ -38,7 +38,7 @@ _Fazer CRUD_
 _Enviar dados entre componentes que não tem ligação direta, com uso de Subject_
 _Comunicação entre componentes_
 _Enviar dados entre pai e filho com @Input e @Output_
-Fazer lazy load de módulo, e colocar rotas filhas nesse módulo - AULA 62
+_Fazer lazy load de módulo, e colocar rotas filhas nesse módulo_
 Reactive Form - AULA 90
 Fazer Custom Validator - AULA 109
 
@@ -53,8 +53,10 @@ Separar lógica de serviço de lógica de componente
 Fazer CRUD
 Enviar dados entre componentes que não tem ligação direta, com uso de Subject
 Comunicação entre componentes
-Enviar dados entre pai e filho com @Input e @Output********\*********
+Enviar dados entre pai e filho com @Input e @Output**\*\*\*\***\***\*\*\*\***
+Fazer lazy load de módulo, e colocar rotas filhas nesse módulo
 
 ## Alterações/correções
 
 - incluir pipes na formatação dos preços dentro dos componentes de atualizar e deletar
+- colocar alteração para nav de user no header

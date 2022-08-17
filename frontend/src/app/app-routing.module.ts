@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './views/home/home.component';
-import { GameCrudComponent } from './views/game-crud/game-crud.component';
-import { GameCreateComponent } from './components/game/game-create/game-create.component';
-import { GameUpdateComponent } from './components/game/game-update/game-update.component';
-import { GameDeleteComponent } from './components/game/game-delete/game-delete.component';
+import { HomeComponent } from './home/home.component';
+import { GameCrudComponent } from './game/game-crud/game-crud.component';
+import { UserViewComponent } from './user/user-view/user-view.component';
 
 const routes: Routes = [
   {
@@ -14,19 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'games',
-    component: GameCrudComponent,
+    loadChildren: () => import('./game/game.module').then((m) => m.GameModule),
   },
   {
-    path: 'games/create',
-    component: GameCreateComponent,
-  },
-  {
-    path: 'games/update/:id',
-    component: GameUpdateComponent,
-  },
-  {
-    path: 'games/delete/:id',
-    component: GameDeleteComponent,
+    path: 'users',
+    loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
   },
 ];
 

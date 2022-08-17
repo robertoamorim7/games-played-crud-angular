@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "The Last of Us",
-      "price": 200
+      "price": 2000
     },
     {
       "id": 2,
       "name": "GTA V",
-      "price": 65
+      "price": 600
     },
     {
       "id": 4,
@@ -17,7 +17,7 @@
     },
     {
       "name": "Spiderman",
-      "price": 150.8,
+      "price": 100,
       "id": 6
     },
     {
@@ -31,8 +31,8 @@
       "id": 9
     },
     {
-      "name": "Super Mario",
-      "price": "10",
+      "name": "dadads",
+      "price": 23,
       "id": 10
     }
   ]

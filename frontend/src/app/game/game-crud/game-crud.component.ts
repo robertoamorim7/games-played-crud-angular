@@ -1,5 +1,5 @@
-import { HeaderService } from './../../components/template/header/header.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { HeaderService } from '../../template/header/header.service';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
