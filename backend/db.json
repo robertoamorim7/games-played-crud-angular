@@ -1,4 +1,26 @@
 {
+  "users": [
+    {
+      "name": "Philipe Gama",
+      "email": "philipe@gama",
+      "id": 1
+    },
+    {
+      "name": "Roberto",
+      "email": "roberto@viana",
+      "id": 2
+    },
+    {
+      "name": "Roberto Vinicius",
+      "email": "roberto@amorim",
+      "id": 3
+    },
+    {
+      "name": "akdnasd",
+      "email": "sad@aasd",
+      "id": 4
+    }
+  ],
   "games": [
     {
       "id": 1,
@@ -35,6 +57,12 @@
       "price": 350,
       "urlBoxArt": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
       "id": 10
+    },
+    {
+      "name": "Celeste",
+      "price": 25,
+      "urlBoxArt": "https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png",
+      "id": 11
     }
   ]
 }

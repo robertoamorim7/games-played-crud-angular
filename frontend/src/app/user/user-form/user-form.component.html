@@ -1,1 +1,36 @@
 <p>user-form works!</p>
+
+<mat-card>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label for="name">Nome</mat-label>
+      <input
+        matInput
+        id="name"
+        placeholder="Nome do Usuário"
+        formControlName="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="email">Email</mat-label>
+      <input
+        id="email"
+        type="email"
+        matInput
+        placeholder="email@email.com"
+        formControlName="email"
+      />
+    </mat-form-field>
+    <button
+      [disabled]="userForm.invalid"
+      type="submit"
+      mat-raised-button
+      color="primary"
+    >
+      Cadastrar
+    </button>
+  </form>
+</mat-card>
+
+<p>Form Status: {{ userForm.status }}</p>
+<p>Form Value: {{ userForm.value | json }}</p>

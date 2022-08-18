@@ -1,5 +1,4 @@
 import { GameRoutingModule } from './game-routing.module';
-import { GameService } from './game.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -15,7 +14,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatTableModule } from '@angular/material/table';
 import { GameCrudComponent } from './game-crud/game-crud.component';
 
 @NgModule({
@@ -33,16 +31,10 @@ import { GameCrudComponent } from './game-crud/game-crud.component';
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule,
     FormsModule,
     HttpClientModule,
     GameRoutingModule,
   ],
-  exports: [
-    GameReadComponent,
-    GameCreateComponent,
-    GameDeleteComponent,
-    GameUpdateComponent,
-  ],
+  exports: [],
 })
 export class GameModule {}

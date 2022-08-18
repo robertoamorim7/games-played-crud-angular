@@ -39,7 +39,7 @@ _Enviar dados entre componentes que não tem ligação direta, com uso de Subjec
 _Comunicação entre componentes_
 _Enviar dados entre pai e filho com @Input e @Output_
 _Fazer lazy load de módulo, e colocar rotas filhas nesse módulo_
-Reactive Form - AULA 90
+_Reactive Form_
 Fazer Custom Validator - AULA 109
 
 ## Funções/utilidades já utilizadas/integradas
@@ -55,8 +55,15 @@ Enviar dados entre componentes que não tem ligação direta, com uso de Subject
 Comunicação entre componentes
 Enviar dados entre pai e filho com @Input e @Output**\*\*\*\***\***\*\*\*\***
 Fazer lazy load de módulo, e colocar rotas filhas nesse módulo
+Reactive Form
 
 ## Alterações/correções
 
 - incluir pipes na formatação dos preços dentro dos componentes de atualizar e deletar
-- colocar alteração para nav de user no header
+- incluir informações pessoais no footer
+- ajustar estilização dos botoes dos cards
+- input
+
+## Caso de tempo
+
+- sistema de login, escondendo rotas quando não logado
