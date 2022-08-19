@@ -1,24 +1,46 @@
 {
   "users": [
     {
-      "name": "Philipe Gama",
-      "email": "philipe@gama",
+      "name": "Philpe",
+      "email": "roberto@game",
+      "cep": "69086-550",
+      "numero": "13",
+      "complemento": "sdf",
+      "rua": "Rua",
+      "bairro": "Bairro",
+      "cidade": "Cidade",
+      "estado": "Estado",
+      "senha": "1234",
+      "confirmarSenha": "1234",
       "id": 1
     },
     {
-      "name": "Roberto",
-      "email": "roberto@viana",
+      "name": "adads@asdads",
+      "email": "adasd@asdasd",
+      "cep": "69086-550",
+      "numero": "123",
+      "complemento": null,
+      "rua": "wsedasd",
+      "bairro": "adasd",
+      "cidade": "asdasd",
+      "estado": "adasd",
+      "senha": "1234",
+      "confirmarSenha": "1234",
       "id": 2
     },
     {
-      "name": "Roberto Vinicius",
-      "email": "roberto@amorim",
+      "name": "ROBERTO VINICIUS VIANA AMORIM",
+      "email": "robertovva@gmail.com",
+      "cep": "69086-550",
+      "numero": "13",
+      "complemento": "asd",
+      "rua": "adads",
+      "bairro": "Gilberto Mestrinho",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "senha": "1234",
+      "confirmarSenha": "1234",
       "id": 3
-    },
-    {
-      "name": "akdnasd",
-      "email": "sad@aasd",
-      "id": 4
     }
   ],
   "games": [
@@ -51,12 +73,6 @@
       "price": "40",
       "id": 9,
       "urlBoxArt": "https://a-static.mlcdn.com.br/800x560/days-gone-ps4-bend-studio/hobimaimportingnews2/6194464691/b5486dffec6038e7ec6cc176998cd37a.jpg"
-    },
-    {
-      "name": "GoW Ragnarok ",
-      "price": 350,
-      "urlBoxArt": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
-      "id": 10
     },
     {
       "name": "Celeste",

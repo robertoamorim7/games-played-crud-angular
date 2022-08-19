@@ -1,6 +1,4 @@
-<p>user-form works!</p>
-
-<mat-card>
+<mat-card class="container">
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <mat-form-field>
       <mat-label for="name">Nome</mat-label>
@@ -21,6 +19,92 @@
         formControlName="email"
       />
     </mat-form-field>
+
+    <div class="cep-field">
+      <mat-form-field style="flex: 1">
+        <mat-label for="cep">CEP</mat-label>
+        <input id="cep" matInput placeholder="CEP" formControlName="cep" />
+      </mat-form-field>
+      <mat-form-field style="flex: 1">
+        <mat-label for="numero">Número</mat-label>
+        <input
+          id="numero"
+          type="text"
+          matInput
+          placeholder="Número"
+          formControlName="numero"
+        />
+      </mat-form-field>
+      <mat-form-field style="flex: 2">
+        <mat-label for="complemento">Complemento</mat-label>
+        <input
+          id="complemento"
+          type="text"
+          matInput
+          placeholder="Complemento"
+          formControlName="complemento"
+        />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field>
+      <mat-label for="rua">Rua</mat-label>
+      <input id="rua" matInput placeholder="Rua" formControlName="rua" />
+    </mat-form-field>
+
+    <div class="bairro-field">
+      <mat-form-field style="flex: 1">
+        <mat-label for="bairro">Bairro</mat-label>
+        <input
+          id="bairro"
+          type="text"
+          matInput
+          placeholder="Bairro"
+          formControlName="bairro"
+        />
+      </mat-form-field>
+      <mat-form-field style="flex: 1">
+        <mat-label for="cidade">Cidade</mat-label>
+        <input
+          id="cidade"
+          type="text"
+          matInput
+          placeholder="Cidade"
+          formControlName="cidade"
+        />
+      </mat-form-field>
+      <mat-form-field style="flex: 1">
+        <mat-label for="estado">Estado</mat-label>
+        <input
+          id="estado"
+          type="text"
+          matInput
+          placeholder="Estado"
+          formControlName="estado"
+        />
+      </mat-form-field>
+    </div>
+    <mat-form-field style="flex: 1">
+      <mat-label for="estado">Senha</mat-label>
+      <input
+        id="senha"
+        type="password"
+        matInput
+        placeholder="Senha"
+        formControlName="senha"
+      />
+    </mat-form-field>
+    <mat-form-field style="flex: 1">
+      <mat-label for="estado">Confirme sua senha</mat-label>
+      <input
+        id="confirmarSenha"
+        type="password"
+        matInput
+        placeholder="Digite sua senha novamente"
+        formControlName="confirmarSenha"
+      />
+    </mat-form-field>
+
     <button
       [disabled]="userForm.invalid"
       type="submit"
@@ -32,5 +116,7 @@
   </form>
 </mat-card>
 
-<p>Form Status: {{ userForm.status }}</p>
-<p>Form Value: {{ userForm.value | json }}</p>
+<div style="width: 600px">
+  <p>Form Status: {{ userForm.status }}</p>
+  <p>Form Value: {{ userForm.value | json }}</p>
+</div>

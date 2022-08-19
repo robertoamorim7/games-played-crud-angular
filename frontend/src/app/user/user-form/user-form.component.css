@@ -2,10 +2,20 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
-  width: 600px;
+  width: 1000px;
 }
 
 button {
   margin-right: 16px;
   margin-top: 16px;
+}
+
+.cep-field {
+  display: flex;
+  gap: 16px;
+}
+
+.bairro-field {
+  display: flex;
+  gap: 16px;
 }
