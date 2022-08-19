@@ -79,6 +79,30 @@
       "price": 25,
       "urlBoxArt": "https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png",
       "id": 11
+    },
+    {
+      "name": "God of War Ragnarok",
+      "price": 350,
+      "urlBoxArt": "https://preview.redd.it/d9ya20p4x5n71.jpg?width=789&format=pjpg&auto=webp&s=8cc8f01473c03c8cecfdb4be5f154ca64550108e",
+      "id": 12
+    },
+    {
+      "name": "Red Dead Redemption",
+      "price": 100,
+      "urlBoxArt": "https://www.mobygames.com/images/covers/l/187819-red-dead-redemption-playstation-3-front-cover.jpg",
+      "id": 13
+    },
+    {
+      "name": "Red Dead Redemption 2",
+      "price": 350,
+      "urlBoxArt": "https://www.mobygames.com/images/covers/l/520730-red-dead-redemption-ii-playstation-4-front-cover.jpg",
+      "id": 14
+    },
+    {
+      "name": "Bully",
+      "price": 20,
+      "urlBoxArt": "https://www.mobygames.com/images/covers/l/371688-bully-scholarship-edition-android-front-cover.png",
+      "id": 15
     }
   ]
 }

@@ -61,9 +61,9 @@ Reactive Form
 
 - incluir pipes na formatação dos preços dentro dos componentes de atualizar e deletar
 - incluir informações pessoais no footer
-- ajustar estilização dos botoes dos cards
 - input
 
 ## Caso de tempo
 
 - sistema de login, escondendo rotas quando não logado
+- background-image: linear-gradient(to right top, #d42878, #c2267c, #af257e, #9b267f, #87277e);

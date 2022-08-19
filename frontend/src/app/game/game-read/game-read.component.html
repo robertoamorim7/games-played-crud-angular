@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-card mat-elevation-z4 class="game-card" *ngFor="let game of games">
+  <mat-card mat-elevation-z5 class="game-card" *ngFor="let game of games">
     <div class="img-container">
       <img mat-card-img [src]="game.urlBoxArt" alt="boxArt" />
     </div>
@@ -9,16 +9,16 @@
         >Preço: {{ game.price | currency: "BRL" }}</mat-card-subtitle
       >
       <mat-card-actions>
-        <button>
+        <button mat-raised-button color="primary">
           <a routerLink="update/{{ game.id }}">
             Editar
             <i class="material-icons">edit</i>
           </a>
         </button>
-        <button>
+        <button mat-raised-button color="primary">
           <a routerLink="delete/{{ game.id }}">
             Excluir
-            <i class="material-icons" appRed>delete</i>
+            <i class="material-icons" style="color: #e35e6b">delete</i>
           </a>
         </button>
       </mat-card-actions>

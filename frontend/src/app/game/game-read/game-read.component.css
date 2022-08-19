@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 200px;
   margin: 16px;
   padding-bottom: 0px;
 }
@@ -28,6 +28,7 @@ a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #fff;
 }
 
 button {
@@ -35,6 +36,6 @@ button {
 }
 
 i {
-  color: #d9cd26;
+  color: yellow;
   margin-left: 4px;
 }
