@@ -1,4 +1,6 @@
 import { Component, Directive, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/login/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -6,7 +8,20 @@ import { Component, Directive, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  constructor() {}
+  showMenu: boolean = false;
 
-  ngOnInit(): void {}
+  constructor(private authService: AuthService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.authService.getIsLoggedIn().subscribe((shouldLogIn) => {
+      this.showMenu = shouldLogIn;
+      console.log(shouldLogIn);
+    });
+  }
+
+  logout() {
+    this.showMenu = false;
+    this.authService.setIsLoggedOut();
+    this.router.navigate(['login']);
+  }
 }

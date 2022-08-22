@@ -25,6 +25,6 @@ import { UserViewComponent } from './user-view/user-view.component';
     MatGridListModule,
     MatSnackBarModule,
   ],
-  exports: [UserComponent],
+  exports: [UserViewComponent],
 })
 export class UserModule {}

@@ -1,0 +1,23 @@
+.container {
+  background-image: linear-gradient(
+    to right top,
+    #d42878,
+    #c2267c,
+    #af257e,
+    #9b267f,
+    #87277e
+  );
+  width: 500px;
+  height: 200px;
+}
+
+.inputs {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  align-self: center;
+}

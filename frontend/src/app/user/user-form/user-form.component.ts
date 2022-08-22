@@ -44,7 +44,6 @@ export class UserFormComponent implements OnInit {
       },
       { validators: UserValidations.mustMatch }
     );
-    console.log(this.userForm);
   }
 
   onSubmit(): void {

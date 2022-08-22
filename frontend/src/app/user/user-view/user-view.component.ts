@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/login/auth.service';
 import { HeaderService } from 'src/app/template/header/header.service';
 
 @Component({
@@ -7,12 +8,22 @@ import { HeaderService } from 'src/app/template/header/header.service';
   styleUrls: ['./user-view.component.css'],
 })
 export class UserViewComponent implements OnInit {
-  constructor(private headerService: HeaderService) {
+  isLoggedIn: boolean = false;
+
+  constructor(
+    private headerService: HeaderService,
+    private authService: AuthService
+  ) {
     this.headerService.raiseDataEmitterEvent({
       title: 'Usuário',
       icon: 'person',
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    {
+      this.isLoggedIn = this.authService.getIsLogged();
+      console.log(this.isLoggedIn, 'userview');
+    }
+  }
 }

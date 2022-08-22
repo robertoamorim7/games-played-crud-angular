@@ -27,39 +27,16 @@ export class UserService {
     );
   }
 
+  readById(id: string | null): Observable<User> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<User>(url).pipe(
+      map((e) => e),
+      catchError((e) => this.handleError(e))
+    );
+  }
+
   handleError(e: any): Observable<any> {
     this.showMessage('As senhas devem ser iguais', true);
     return EMPTY;
   }
-
-  /*  read(): Observable<Game[]> {
-    return this.http.get<Game[]>(this.baseUrl).pipe(
-      map((e) => e),
-      catchError((e) => this.handleError(e))
-    );
-  }
-
-  readById(id: string | null): Observable<Game> {
-    const url = `${this.baseUrl}/${id}`;
-    return this.http.get<Game>(url).pipe(
-      map((e) => e),
-      catchError((e) => this.handleError(e))
-    );
-  }
-
-  update(game: Game): Observable<Game> {
-    const url = `${this.baseUrl}/${game.id}`;
-    return this.http.put<Game>(url, game).pipe(
-      map((e) => e),
-      catchError((e) => this.handleError(e))
-    );
-  }
-
-  delete(game: Game): Observable<Game> {
-    const url = `${this.baseUrl}/${game.id}`;
-    return this.http.delete<Game>(url).pipe(
-      map((e) => e),
-      catchError((e) => this.handleError(e))
-    );
-  } */
 }

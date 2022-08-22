@@ -12,13 +12,17 @@
         <i class="material-icons">home</i>
         Início
       </a>
-      <a mat-list-item routerLink="/games">
+      <a mat-list-item routerLink="/games" *ngIf="showMenu">
         <i class="material-icons">videogame_asset</i>
         Jogos
       </a>
-      <a mat-list-item routerLink="/users">
+      <a mat-list-item routerLink="/users" *ngIf="showMenu">
         <i class="material-icons">person</i>
         Usuário
+      </a>
+      <a mat-list-item routerLink="" (click)="logout()" *ngIf="showMenu">
+        <i style="color: red" class="material-icons">logout</i>
+        Logout
       </a>
     </mat-nav-list>
   </mat-sidenav>

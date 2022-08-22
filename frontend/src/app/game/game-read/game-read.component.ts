@@ -19,9 +19,9 @@ export class GameReadComponent implements OnInit {
   constructor(private gameService: GameService) {}
 
   ngOnInit(): void {
-    this.gameService.read().subscribe((games) => {
-      this.games = games;
-      this.addTotalGames(games.length);
+    this.gameService.read().subscribe((game) => {
+      this.games = game;
+      this.addTotalGames(game.length);
     });
   }
 }

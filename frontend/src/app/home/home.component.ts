@@ -1,5 +1,6 @@
 import { HeaderService } from '../template/header/header.service';
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../login/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private headerService: HeaderService) {
+  isLoggedIn: boolean = false;
+
+  constructor(
+    private headerService: HeaderService,
+    private authService: AuthService
+  ) {
     this.headerService.raiseDataEmitterEvent({
       title: 'Início',
       icon: 'home',
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isLoggedIn = this.authService.getIsLogged();
+    console.log(this.isLoggedIn, 'home');
+  }
 }

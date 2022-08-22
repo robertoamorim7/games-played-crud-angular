@@ -2,7 +2,8 @@
   "users": [
     {
       "name": "Philpe",
-      "email": "roberto@game",
+      "email": "user@user",
+      "senha": "12345",
       "cep": "69086-550",
       "numero": "13",
       "complemento": "sdf",
@@ -10,37 +11,49 @@
       "bairro": "Bairro",
       "cidade": "Cidade",
       "estado": "Estado",
-      "senha": "1234",
-      "confirmarSenha": "1234",
       "id": 1
     },
     {
-      "name": "adads@asdads",
-      "email": "adasd@asdasd",
-      "cep": "69086-550",
-      "numero": "123",
+      "name": "Roberto Vinicius",
+      "email": "user2@user2",
+      "cep": "55500-555",
+      "numero": "23",
       "complemento": null,
-      "rua": "wsedasd",
-      "bairro": "adasd",
-      "cidade": "asdasd",
-      "estado": "adasd",
+      "rua": "Rua Top",
+      "bairro": "Sao jose",
+      "cidade": "Manaus",
+      "estado": "Rondonia",
       "senha": "1234",
       "confirmarSenha": "1234",
       "id": 2
     },
     {
-      "name": "ROBERTO VINICIUS VIANA AMORIM",
+      "name": "Lucas J",
+      "email": "user3@user3",
+      "cep": "55555-555",
+      "numero": "45",
+      "complemento": null,
+      "rua": "Avenida Cidade nova",
+      "bairro": "Grande vitoria",
+      "cidade": "Brasilia",
+      "estado": "DF",
+      "senha": "123456",
+      "confirmarSenha": "123456",
+      "id": 3
+    },
+    {
+      "name": "Roberto Amorim",
       "email": "robertovva@gmail.com",
       "cep": "69086-550",
-      "numero": "13",
-      "complemento": "asd",
-      "rua": "adads",
+      "numero": "663",
+      "complemento": "CJ Castanheira",
+      "rua": "Rua Sobral",
       "bairro": "Gilberto Mestrinho",
       "cidade": "Manaus",
-      "estado": "AM",
-      "senha": "1234",
-      "confirmarSenha": "1234",
-      "id": 3
+      "estado": "Amazonas",
+      "senha": "383201",
+      "confirmarSenha": "383201",
+      "id": 4
     }
   ],
   "games": [
@@ -76,7 +89,7 @@
     },
     {
       "name": "Celeste",
-      "price": 25,
+      "price": 35,
       "urlBoxArt": "https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2.png",
       "id": 11
     },
@@ -94,7 +107,7 @@
     },
     {
       "name": "Red Dead Redemption 2",
-      "price": 350,
+      "price": 500,
       "urlBoxArt": "https://www.mobygames.com/images/covers/l/520730-red-dead-redemption-ii-playstation-4-front-cover.jpg",
       "id": 14
     },
@@ -103,6 +116,12 @@
       "price": 20,
       "urlBoxArt": "https://www.mobygames.com/images/covers/l/371688-bully-scholarship-edition-android-front-cover.png",
       "id": 15
+    },
+    {
+      "name": "Cuphead",
+      "price": 20,
+      "urlBoxArt": "https://howlongtobeat.com/games/cuphead-250.jpg",
+      "id": 16
     }
   ]
 }

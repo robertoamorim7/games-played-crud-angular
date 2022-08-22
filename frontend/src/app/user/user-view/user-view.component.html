@@ -1,3 +1,4 @@
-<h1>Esta é a user view</h1>
+<h1 *ngIf="!isLoggedIn">Faça seu cadastro</h1>
+<h1 *ngIf="isLoggedIn">Atualizar cadastro</h1>
 <br />
 <app-user-form></app-user-form>

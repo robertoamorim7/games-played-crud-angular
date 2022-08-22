@@ -1,0 +1,39 @@
+<p></p>
+<mat-card class="container">
+  <form class="inputs">
+    <mat-card-title class="title">Login</mat-card-title>
+    <mat-form-field>
+      <mat-label for="name">Email</mat-label>
+      <input
+        [(ngModel)]="user.email"
+        matInput
+        id="name"
+        placeholder="Email@email"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="senha">Senha</mat-label>
+      <input
+        [(ngModel)]="user.senha"
+        id="senha"
+        type="password"
+        matInput
+        placeholder="Senha"
+        name="senha"
+      />
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" (click)="login()">
+      Login <i class="material-icons">login</i>
+    </button>
+  </form>
+</mat-card>
+
+<mat-card>
+  <mat-card-subtitle
+    >Já possui conta? Faça seu cadastro
+    <a style="color: white" routerLink="/user-sign">
+      aqui
+    </a></mat-card-subtitle
+  >
+</mat-card>

@@ -1,16 +1,27 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { catchError, EMPTY, map, Observable } from 'rxjs';
+import { AuthService } from '../login/auth.service';
 import { Game } from './game.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class GameService {
+export class GameService implements OnInit {
   baseUrl = 'http://localhost:3001/games';
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
+  userId: number = {} as number;
+
+  constructor(
+    private snackBar: MatSnackBar,
+    private http: HttpClient,
+    private authService: AuthService
+  ) {
+    this.userId = this.authService.getUserId();
+  }
+
+  ngOnInit(): void {}
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'x', {
@@ -29,7 +40,8 @@ export class GameService {
   }
 
   read(): Observable<Game[]> {
-    return this.http.get<Game[]>(this.baseUrl).pipe(
+    const url = `${this.baseUrl}`;
+    return this.http.get<Game[]>(url).pipe(
       map((e) => e),
       catchError((e) => this.handleError(e))
     );
