@@ -54,6 +54,20 @@
       "senha": "383201",
       "confirmarSenha": "383201",
       "id": 4
+    },
+    {
+      "name": "Ramiro",
+      "email": "ramiro@email",
+      "cep": "55555-000",
+      "numero": "123",
+      "complemento": null,
+      "rua": "rua",
+      "bairro": "bairro",
+      "cidade": "cuiaba",
+      "estado": "parana",
+      "senha": "1234",
+      "confirmarSenha": "1234",
+      "id": 5
     }
   ],
   "games": [
@@ -74,12 +88,6 @@
       "name": "Stray",
       "price": 59.9,
       "urlBoxArt": "https://cdn.ome.lt/lVp0MvgmlCYjCmTyJzR4s6x5s_I=/200x0/smart/extras/capas/stray-cover.jpg"
-    },
-    {
-      "name": "Spiderman",
-      "price": 100,
-      "id": 6,
-      "urlBoxArt": "https://farm1.staticflickr.com/875/41233771921_1f8d2b177e_k.jpg"
     },
     {
       "name": "Days Gone",
@@ -119,7 +127,7 @@
     },
     {
       "name": "Cuphead",
-      "price": 20,
+      "price": 205,
       "urlBoxArt": "https://howlongtobeat.com/games/cuphead-250.jpg",
       "id": 16
     }
